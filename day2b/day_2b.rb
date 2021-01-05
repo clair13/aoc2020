@@ -17,6 +17,7 @@ def validate(input)
   
   first_position = password[policy.lowest - 1]
   second_position = password[policy.highest - 1]
+  
   #at least one part of the condition must be true to be valid
   (first_position == policy.letter) ^ (second_position == policy.letter)
 end
