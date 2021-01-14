@@ -1,6 +1,6 @@
 input = File.readlines('puzzle_input.txt').map { |line| line.chomp }
 
-def total_number_of_trees_encountered(input)
+def multiplication_of_trees_encountered_in_each_slope(input)
   slopes = [[1,1],[3,1],[5,1],[7,1],[1,2]]
 
   array_of_encountered_trees_in_each_slope = []
@@ -18,10 +18,10 @@ def total_number_of_trees_encountered(input)
 
     array_of_encountered_trees_in_each_slope << encountered_trees
   }
-  
+
   puts array_of_encountered_trees_in_each_slope.inject(:*)
 end
 
-total_number_of_trees_encountered(input)
+multiplication_of_trees_encountered_in_each_slope(input)
 
 
